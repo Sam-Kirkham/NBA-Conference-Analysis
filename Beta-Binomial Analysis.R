@@ -59,7 +59,7 @@ qbeta(c(0.025, 0.975), old_a_star, old_b_star)
 
 # Recent Analysis ---------------------------------------------------------
 
-recent$wins <- ifelse(recent$winning_conference == "E", 1, 0)
+recent$wins <- ifelse(recent$winning_conference == "W", 1, 0)
 recent_y <- sum(recent$wins)
 recent_n <- length(recent$wins)
 
